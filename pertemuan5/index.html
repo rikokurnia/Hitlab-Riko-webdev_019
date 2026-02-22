@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <header>
+            <h1>Fokus Hari Ini</h1>
+            <p id="task-counter">0 tugas tersisa</p>
+        </header>
+        
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Apa yang perlu diselesaikan?" autocomplete="off">
+            <button type="submit" id="add-btn">+</button>
+        </form>
+
+        <div class="filters">
+            <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+            <button type="button" class="filter-btn" data-filter="active">Belum Selesai</button>
+            <button type="button" class="filter-btn" data-filter="completed">Selesai</button>
+        </div>
+
+        <ul id="task-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
