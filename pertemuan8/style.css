@@ -1,0 +1,69 @@
+:root {
+    --bg-page: #FFE3E1;   /* Background halaman */
+    --bg-card: #FFD1D1;   /* Background kontainer utama */
+    --accent: #FF9494;    /* Warna tombol dan aksen */
+    --text-main: #333333;
+}
+
+body {
+    background-color: var(--bg-page) !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-main);
+}
+
+.custom-card {
+    background-color: var(--bg-card) !important;
+    border: none;
+    border-radius: 16px;
+}
+
+h3.card-title {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.custom-input {
+    border: 2px solid white;
+    background-color: white;
+}
+
+.custom-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.25rem rgba(255, 148, 148, 0.25);
+}
+
+.btn-custom {
+    background-color: var(--accent) !important;
+    color: white !important;
+    font-weight: 600;
+    border: none;
+    padding: 0 20px;
+    transition: filter 0.2s ease;
+}
+
+.btn-custom:hover {
+    filter: brightness(0.9);
+}
+
+.list-group-item {
+    background-color: white !important;
+    border: 1px solid var(--bg-page) !important;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    transition: transform 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-2px);
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+/* Modifikasi tombol hapus agar senada tapi tetap terlihat sebagai aksi destruktif */
+.delete-btn {
+    background-color: #ff6b6b !important;
+    border: none !important;
+}

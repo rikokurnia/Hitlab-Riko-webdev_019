@@ -4,7 +4,7 @@ const todoRoutes = require('./routes/todos');
 const logger = require('./middleware/logger');
 
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 // 1. Global Middleware
 app.use(cors());
